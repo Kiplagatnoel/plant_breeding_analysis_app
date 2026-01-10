@@ -1,0 +1,98 @@
+---
+title: "dartR Genotyping Data Analysis"
+output: html_document
+---
+  
+# dartR Genotyping Data Analysis Module
+  
+## What is dartR?
+  
+**dartR** (Data Analysis and Reporting Tools for R) is an R package specifically designed for analyzing**DArT (Diversity Arrays Technology)** genotyping data. It provides a comprehensive suite of tools for processing, quality control, filtering, and analyzing reduced-representation sequencing data like DArTseq markers.
+
+### Key Features:
+- **Data Import**: Import DArT data in various formats including CSV, Excel, and DArT-specific formats
+- **Quality Control**: Filter markers based on call rate, reproducibility, and other quality metrics
+- **Population Genetics**: Calculate genetic diversity statistics, population structure, and genetic distances
+- **Visualization**: Create various plots for data exploration and quality assessment
+
+## Common Procedures in dartR Analysis
+
+### 1. **Data Import and Conversion**
+
+
+## Common Terminology
+- **Genlight Object:** The core data structure in dartR that stores:
+  
+- **Genotype Matrix:**  Binary (0/1/2) or presence/absence data
+
+- **Locus Metadata:** Information about each marker (chromosome, position, etc.)
+
+- **Individual Metadata:** Sample information (population, location, etc.)
+
+- **Quality Metrics:**Quality Metrics: Call rate, reproducibility, etc.
+
+## Key Metrics:
+  - **Call Rate:** Percentage of samples successfully genotyped for a marker
+
+  - **Reproducibility:** Consistency of marker calls across technical replicates
+
+  - **Minor Allele Frequency (MAF):** Frequency of the less common allele
+
+  - **Polymorphic Information Content (PIC):** Measure of marker informativeness
+
+  - **Observed Heterozygosity:** Proportion of heterozygous individuals
+
+## Filtering Thresholds:
+  - **Call Rate:** Typically >0.90-0.95 Keep markers with ≥90-95% success rate
+
+  - **Reproducibility:** Typically >0.98-0.99 High confidence markers
+
+  - **MAF: Typically** 0.01-0.05 Remove rare alleles
+
+## Uses and Applications
+### 1. Genetic Diversity Studies 
+  - **Estimate genetic diversity within and between populations**
+
+  - **Calculate F-statistics (Fst, Fis, Fit)**
+
+  - **Assess population differentiation**
+
+### 2. Population Structure Analysis
+- **Identify genetic clusters using PCA, DAPC, or STRUCTURE-like analyses**
+
+- **Detect admixture and hybridization**
+
+- **Assign individuals to populations**
+
+### 3. Association Studies
+- **Prepare genotype data for Genome-Wide Association Studies (GWAS)**
+
+- **Calculate kinship matrices for mixed models**
+
+### 4. Conservation Genetics
+- **Assess genetic variation in endangered species**
+
+- **Monitor genetic erosion**
+
+- **Guide breeding programs**
+
+### Importance in Genetic Analysis
+#### Why Use dartR?
+- **Specialized for DArT Data:** Optimized for DArT is specific data format and characteristics
+
+- **Comprehensive Pipeline:** All-in-one solution from raw data to publication-ready results
+
+- **Quality Assurance:** Rigorous quality control to ensure reliable results
+
+- **Reproducibility:** Script-based analysis ensures transparent and repeatable research
+
+- **Integration:** Easily integrates with other R packages for downstream analyses
+
+### Critical Role in Research:
+- **Plant Breeding: Identify markers linked to important traits**
+
+- **Ecology: Understand population structure and gene flow**
+
+- **Evolutionary Biology: Study adaptation and speciation**
+
+- **Conservation: Monitor genetic diversity in threatened populations**
