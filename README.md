@@ -1,4 +1,4 @@
-# 🌱 Plant Breeding Analysis Platform v4.0
+# 🌱 Plant Breeding Analysis Platform
 
 ## 📖 Overview
 A comprehensive R/Shiny application for plant breeding data analysis, featuring genome-wide association studies (GWAS), diallel analysis, multi-environment trial analysis (METAN), and advanced population genetics tools. This platform provides an intuitive interface for breeders and geneticists to analyze complex breeding data without extensive programming knowledge.
@@ -208,3 +208,4 @@ shiny::runApp("path/to/app/directory")
   Contact the development team through the provided channels
 
   *Last Updated: Version 4.0 | Built with R/Shiny | For Plant Breeding Research*
+
