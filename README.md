@@ -207,5 +207,6 @@ shiny::runApp("path/to/app/directory")
 
   Contact the development team through the provided channels
 
-  *Last Updated: Version 4.0 | Built with R/Shiny | For Plant Breeding Research*
+  *Built with R/Shiny | For Plant Breeding Research*
+
 
