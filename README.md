@@ -1,48 +1,210 @@
-# plant_breeding_analysis_app
+# 🌱 Plant Breeding Analysis Platform v4.0
 
-A comprehensive R/Shiny application for plant breeding data analysis
+## 📖 Overview
+A comprehensive R/Shiny application for plant breeding data analysis, featuring genome-wide association studies (GWAS), diallel analysis, multi-environment trial analysis (METAN), and advanced population genetics tools. This platform provides an intuitive interface for breeders and geneticists to analyze complex breeding data without extensive programming knowledge.
 
-## Features
+## ✨ Key Features
+  📊 Core Analysis Modules
+  🧬 GWAS Analysis: Single-trait and multi-trait genome-wide association studies
 
-- Interactive web application built with R Shiny
-- Responsive design
-- Automated deployment with GitHub Actions
+  🌱 Diallel Analysis: Complete diallel analysis with GCA/SCA effects, heterosis, and cross performance
 
-## Included Files and Folders
+  🌍 METAN Analysis: Multi-environment trial analysis with AMMI, GGE biplot, and stability analysis
 
-- **Files:** 2 files uploaded
+  🔬 Population Genetics: PCA, kinship, Fst-Fis, LEA structure, and allele frequency analysis
 
-## GitHub Actions
+  🔧 Data Processing
 
-This repository includes GitHub Actions for automated testing and deployment:
+  📁 Data Upload: Support for multiple file formats (CSV, Excel, DArT)
 
-- **Workflow:** `Deploy to GitHub Pages`
-- **R Version:** 4.1.0
-- **GitHub Pages:** Deployed to `gh-pages` branch
+  🔧 Quality Control: MAF filtering, call rate thresholds, missing data imputation
+ 
+  🔗 Data Matching: Automatic genotype-phenotype matching
 
-## Local Development
+## 📈 Advanced Analytics
+  🔄 Multi-Trait Analysis: Combined P-values, meta-analysis, and pleiotropy detection
 
-To run this application locally:
+  🔗 Cross-SNP Mapping: Integration of diallel crosses with SNP effects
 
-```r
-# Install required packages
-install.packages(c("shiny", "renv"))
+  🌐 Parent Network Analysis: Visualization of parent relationships and genetic networks
 
-# Run the application
-shiny::runApp()
-```
+## 📋 Data Management
+  📊 DataFrames Viewer: Interactive exploration of all generated dataframes
 
-## Deployment
+  🚀 Export Functions: Multiple export formats (CSV, Excel, RData, JSON)
 
-- **GitHub Pages:** https://Kiplagatnoel.github.io/plant_breeding_analysis_app/
-- **Repository:** https://github.com/Kiplagatnoel/plant_breeding_analysis_app
-- **GitHub Actions:** https://github.com/Kiplagatnoel/plant_breeding_analysis_app/actions
+  📄 Report Generation: Automated report generation in HTML, PDF, or Word formats
 
-## License
+## 🚀 Installation
+  Prerequisites
+  R (version 4.0 or higher)
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+  RStudio (recommended)
 
-## Author
+  Required R packages (see below)
 
-Created using Shiny App to GitHub Publisher
+## Required R Packages
+### Core packages
+install.packages(c("shiny", "shinydashboard", "shinyWidgets", "DT", "plotly",
+                   "ggplot2", "dplyr", "tidyr", "readr", "writexl", "jsonlite"))
 
+### Analysis packages
+install.packages(c("sommer", "metan", "AGHmatrix", "LEA", "adegenet", "hierfstat",
+                   "rrBLUP", "qtl", "gplots", "RColorBrewer"))
+
+### Optional but recommended
+install.packages(c("visNetwork", "corrplot", "factoextra", "ggrepel", "reshape2"))
+### Installation from Source
+
+Clone or download the repository
+Then run in R:
+shiny::runApp("path/to/app/directory")
+
+## 📁 Data Requirements
+  Phenotypic Data: CSV, Excel, or text format
+
+  Should include genotype IDs and trait measurements
+
+  Optional: Environment, replication, and block information
+
+### Genotypic Data
+  DArT format, CSV, or Excel files
+
+  SNP matrix with genotypes as rows and markers as columns
+
+### Optional metadata columns
+
+### Diallel Data
+  Cross information (Parent1 × Parent2)
+
+  Trait measurements for each cross
+
+  Optional: Replication and environment data
+
+### METAN Data
+  Multi-environment trial data
+
+  Environment, genotype, replication, and trait columns
+
+## 🔍 User Interface Guide
+### Main Navigation
+🔍 About: Documentation and help files
+
+📁 Data Upload: Upload and preview all data types
+
+🔧 Data Processing: Quality control and data preparation
+
+🧬 Population Genetics: Diverse genetic analysis tools
+
+📊 GWAS Analysis: Single and multi-trait association studies
+
+🌱 Diallel Analysis: Complete diallel breeding analysis
+
+🌍 METAN Analysis: Multi-environment trial analysis
+
+📋 DataFrames Viewer: Explore all generated data
+
+### Analysis Workflow
+  Upload Data → Process Data → Run Analyses → Export Results
+
+### ⚙️ Configuration Options
+
+### Quality Control Settings
+  Call rate threshold (0.5-1.0)
+
+  Minor Allele Frequency (MAF) cutoff
+
+  Missing data thresholds
+
+  Heterozygosity filters
+
+### Analysis Parameters
+  GWAS models (LM, LMM)
+
+  PCA components (2-20)
+
+  Kinship matrix methods
+
+  Diallel analysis types
+
+### 📊 Output and Results
+  Export Formats: CSV/Excel tables
+
+  RData for further analysis
+
+  JSON for web applications
+
+  PDF/HTML reports
+
+### Visualizations
+  Manhattan plots and QQ-plots
+
+  Heatmaps and correlation matrices
+
+  Network graphs and biplots
+
+  Interactive plots with plotly
+
+## 🛠️ Technical Details
+### Architecture
+  Modular design with separate analysis modules
+
+  Reactive programming for real-time updates
+
+  Caching system for improved performance
+
+  Error handling and user feedback
+
+### Performance Features
+  Progress indicators for long-running analyses
+
+  Data validation and error checking
+
+  Memory-efficient data handling
+
+  Parallel processing support for intensive computations
+
+### 🤝 Contributing
+  We welcome contributions! Please see our contributing guidelines for details on:
+
+  Bug reports and feature requests
+
+  Code contributions
+
+  Documentation improvements
+
+  Testing and quality assurance
+
+## 📄 License
+  This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Authors and Acknowledgments
+### Primary Developer
+  Kiplagat John Noel - Microbiology, Biochemistry and Biotechnology Department, Kenyatta University (KE)
+
+### Acknowledgments
+  R community for open-source packages
+
+  Plant breeding research groups for testing and feedback
+
+  Open-source software contributors
+
+### 🔗 Useful Links
+  R Project
+
+  Shiny Documentation
+
+  METAN Package
+
+  Plant Breeding Resources
+
+### 📞 Support and Contact
+  For issues, questions, or suggestions:
+
+  Check the documentation in the "About" tab
+
+  Review the help files included with the application
+
+  Contact the development team through the provided channels
+
+  *Last Updated: Version 4.0 | Built with R/Shiny | For Plant Breeding Research*
