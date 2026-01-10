@@ -1,0 +1,143 @@
+---
+title: "Genome-Wide Association Studies (GWAS)"
+output: html_document
+---
+  
+# Genome-Wide Association Studies (GWAS) Module
+  
+## What is GWAS?
+  
+**Genome-Wide Association Studies (GWAS)** is a method used in genetics to identify associations between genetic variants (typically Single Nucleotide Polymorphisms - SNPs) and observable traits (phenotypes). It scans the genome for markers that occur more frequently in individuals with a particular trait than in those without it.
+
+### Key Components:
+- **Genotype Data**: SNP markers across the genome
+- **Phenotype Data**: Measured traits or disease status
+- **Statistical Models**: Tests for association between each SNP and the trait
+- **Multiple Testing Correction**: Accounts for testing thousands/millions of SNPs
+
+## The GWAS Workflow
+
+### **1. Data Preparation**
+
+### **2. Common Statistical Models in GWAS**
+#### 1. Simple Linear Regression
+- **Formula: phenotype ~ SNP_genotype** 
+ - Use: When population structure is minimal
+ 
+ - Advantages: Fast, easy to interpret
+
+#### 2. Linear Mixed Models (LMM)
+- **Formula: phenotype ~ SNP_genotype + (1|kinship)**
+
+  - Use: Corrects for population structure and relatedness
+
+  - Advantages: Reduces false positives
+
+### 3. Generalized Linear Models (GLM)
+- **Formula: Used for binary traits (case-control studies)**
+
+  - Use: Disease association studies
+
+  - Advantages: Handles binary outcomes
+
+### 4. Multi-locus Models
+ - Examples: FarmCPU, MLMM, mrMLM
+ - Use: Detects multiple QTL simultaneously
+ - Advantages: Better power for complex traits
+
+### Common Terminology
+#### Basic Terms:
+  - **SNP (Single Nucleotide Polymorphism):** Single base pair variation
+
+  - **MAF (Minor Allele Frequency):** Frequency of the less common allele
+
+  - **LD (Linkage Disequilibrium):** Non-random association of alleles
+
+  - **QTL (Quantitative Trait Locus):** Genomic region associated with a trait
+
+  - **Effect Size:** Magnitude of trait change per allele copy
+
+#### Statistical Terms:
+  - **P-value:** Probability of observing the result by chance
+
+  - **Beta (β):** Effect size estimate
+
+  - **R²:** Proportion of variance explained
+
+  - **Odds Ratio:** Risk estimate for binary traits
+
+  - **Lambda (λ):** Genomic inflation factor
+
+#### Significance Thresholds:
+  - **Suggestive:** p < 1 × 10⁻⁵
+
+  - **Genome-wide significant:** p < 5 × 10⁻⁸ (standard threshold)
+
+  - **Bonferroni:** 0.05 / number_of_SNPs
+
+  - **FDR (False Discovery Rate):** Controls proportion of false positives
+
+#### Uses and Applications
+##### 1. Trait Discovery
+- **Identify genes controlling important agricultural traits- **
+
+- **Discover biomarkers for disease susceptibility**
+
+- **Understand genetic architecture of complex traits**
+
+##### 2. Crop Improvement
+- **Marker-assisted selection (MAS)**
+
+- **Genomic selection**
+
+- **Breeding value prediction**
+
+##### 3. Medical Genetics
+- **Evolutionary Studies**
+
+- **Detect signatures of selection**
+
+- **Understand adaptation**
+
+- **Study domestication processes**
+
+#### Advanced Topics
+###### 1. Multi-Trait GWAS
+- **Analyze multiple traits simultaneously- **
+
+- **Identify pleiotropic loci**
+
+###### 2. Rare Variant Analysis
+- **Burden tests for rare variants**
+
+- **Sequence-based GWAS**
+
+###### 3. Genomic Prediction
+- **Use GWAS results for breeding value prediction**
+
+- **Genomic selection models**
+
+###### 4. Functional Follow-up
+- **Gene expression (eQTL studies)**
+
+- **Functional validation (CRISPR, RNAi)**
+
+###### Next Steps After GWAS
+- **Candidate Gene Identification:** Annotate significant regions
+
+- **Functional Validation:** Experimental verification
+
+- **Breeding Applications:** Marker development for selection
+
+- **Meta-analysis:** Combine with other studies
+
+- **Pathway Analysis:** Understand biological mechanisms
+
+This GWAS module provides a comprehensive analysis pipeline. Always validate significant findings with independent data and consider biological context when interpreting results.
+
+References
+Bush, W.S., & Moore, J.H. (2012). Chapter 11: Genome-Wide Association Studies. PLoS Computational Biology.
+
+Visscher, P.M., et al. (2017). 10 Years of GWAS Discovery: Biology, Function, and Translation. American Journal of Human Genetics.
+
+Yang, J., et al. (2014). Advantages and pitfalls in the application of mixed-model association methods. Nature Genetics.
