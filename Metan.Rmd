@@ -1,0 +1,144 @@
+---
+title: "Multi-Environment Trial (MET) Analysis"
+output: html_document
+---
+  
+# Multi-Environment Trial (MET) Analysis Module
+  
+## What is MET Analysis?
+  
+**Multi-Environment Trial (MET) Analysis** involves evaluating genotypes across multiple environments (locations, years, or management practices) to assess their performance, stability, and adaptability. This is crucial in plant breeding for identifying genotypes that perform consistently well across different growing conditions.
+
+### Key Objectives:
+1. **Identify superior genotypes** with high yield and stability
+2. **Understand Genotype × Environment (G×E) interactions**
+  3. **Recommend cultivars** for specific environments or regions
+4. **Guide breeding decisions** and selection strategies
+
+## Types of MET Analyses
+
+### **1. Stability Analysis**
+- Measures consistency of genotype performance across environments
+- Methods: Finlay-Wilkinson, Eberhart-Russell, AMMI, GGE biplot
+
+### **2. Adaptability Analysis**
+- Identifies genotypes adapted to specific environments
+- Methods: Pattern analysis, clustering, regression approaches
+
+### **3. Mega-Environment Analysis**
+- Groups similar environments for targeted breeding
+- Methods: Cluster analysis, pattern analysis
+
+## Comprehensive MET Analysis Workflow
+
+### **1. Data Preparation**
+
+
+### Common Terminology
+#### Key Terms:
+**Environment:** Location, year, or management combination
+
+**Genotype:** Genetic entry being tested
+
+**Replicate:** Experimental repetition within environment
+
+**Block:** Local control within environment
+
+**Check:** Standard genotype for comparison
+
+#### Stability Parameters:
+  - **Bi (Regression coefficient):** Responsiveness to environment
+
+  - **bS²di (Deviation from regression):** Stability parameter
+
+  - **WAASB:** Weighted Average of Absolute Scores
+
+  - **Shukla's stability variance**
+
+  - **Wricke's ecovalence**
+
+  - **G×E Interaction Types:**
+      - **Crossover:** Changes in genotype ranking across environments
+
+      - **Non-crossover:** Consistent ranking with magnitude differences
+
+      - **Complex:** Irregular patterns requiring specific analysis
+
+#### Statistical Methods for MET Analysis
+- **1. Traditional Methods**
+    - Joint Regression (Finlay-Wilkinson): Regression on environment index
+    - Eberhart-Russell Model: Regression + deviation from regression
+    - AMMI (Additive Main Effects and Multiplicative Interaction): Combines ANOVA with PCA
+
+- **2. Biplot Methods**
+   - GGE Biplot: Genotype + Genotype × Environment biplot
+   - AMMI Biplot: Visualizes G×E interaction patterns
+   - SREG (Site Regression): Site-specific regression
+
+- **3. Mixed Model Approaches**
+   - Factor Analytic Models: Models covariance structure
+   - Spatial Analysis: Accounts for field variability
+   - Multi-trait Models: Analyzes multiple traits simultaneously
+
+#### Uses and Applications
+- **1. Cultivar Recommendation**
+   - Identify best-performing genotypes for specific regions
+   - Recommend broadly adapted cultivars
+   - Develop environment-specific recommendations
+
+- **2. Breeding Program Optimization**
+   - Select parents for specific adaptationDesign efficient testing networks
+   - Prioritize breeding objectives
+
+- **3. Resource Allocation**
+   - Optimize testing locations and years
+   - Identify redundant test sites
+   - Focus resources on informative environments
+
+- **4. Risk Assessment**
+   - Evaluate stability under variable conditions
+   - Assess performance in stress environments
+   - Predict performance in future environments
+
+#### Importance in Plant Breeding
+##### Why MET Analysis is Critical:
+   - Real-World Relevance: Tests performance under actual growing conditions
+   - Adaptation Assessment: Identifies genotypes suited to target environments
+   - Risk Mitigation: Reduces risk of cultivar failure
+   - Resource Efficiency: Optimizes testing resources
+
+##### Key Benefits:
+   - Better Cultivars: More reliable recommendations
+   - Reduced Risk: Fewer cultivar failures
+   - Efficient Breeding: Faster genetic gain
+   - Targeted Development: Environment-specific breeding
+
+### Practical Applications
+##### For Breeders:
+  - Select superior genotypes for release
+  - Identify target environments for breeding
+  - Optimize testing networks
+  - Develop breeding strategies
+
+#### For Agronomists:
+  - Recommend cultivars for specific regions
+  - Develop management recommendations
+  - Assess environmental effects
+  - Guide extension recommendations
+
+#### For Farmers:
+  - Choose best cultivars for their conditions
+  - Understand performance stability
+  - Manage production risks
+  - Optimize input use
+
+MET analysis is essential for developing cultivars that perform reliably in target environments. Always combine statistical analysis with practical agronomic knowledge and farmer preferences.
+
+## References
+Yan, W., & Kang, M.S. (2003). GGE Biplot Analysis: A Graphical Tool for Breeders, Geneticists, and Agronomists.
+
+Gauch, H.G. (2013). A Simple Protocol for AMMI Analysis of Yield Trials.
+
+Olivoto, T., & Lúcio, A.D. (2020). METAN: An R package for multi-environment trial analysis.
+
+Crossa, J. (1990). Statistical Analyses of Multilocation Trials.
