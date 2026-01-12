@@ -117,7 +117,7 @@ shiny::runApp("path/to/app/directory")
   Missing data thresholds
 
   Heterozygosity filters
-
+![Quality control interface](./images/quality_control.png)
 ### Analysis Parameters
   GWAS models (LM, LMM)
 
@@ -208,6 +208,7 @@ shiny::runApp("path/to/app/directory")
   Contact the development team through the provided channels
 
   *Built with R/Shiny | For Plant Breeding Research*
+
 
 
 
