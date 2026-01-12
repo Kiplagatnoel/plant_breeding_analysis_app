@@ -66,7 +66,7 @@ shiny::runApp("path/to/app/directory")
   Should include genotype IDs and trait measurements
 
   Optional: Environment, replication, and block information
-
+![Data upload interface](./images/data_input.png)
 ### Genotypic Data
   DArT format, CSV, or Excel files
 
@@ -208,5 +208,6 @@ shiny::runApp("path/to/app/directory")
   Contact the development team through the provided channels
 
   *Built with R/Shiny | For Plant Breeding Research*
+
 
 
