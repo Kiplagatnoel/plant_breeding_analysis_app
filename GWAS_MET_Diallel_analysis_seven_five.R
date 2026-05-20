@@ -84,6 +84,7 @@ create_genlight <- function(filename, ind.metafile = NULL) {
         stop("Excel file has insufficient columns for genotype data")
       }
       
+      # covert to character
       sample_names <- as.character(data[[1]])
       
       # Find where genotype data starts (skip metadata columns)
